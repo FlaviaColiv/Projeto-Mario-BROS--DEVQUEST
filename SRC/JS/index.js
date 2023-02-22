@@ -21,12 +21,18 @@ console.log(document.querySelector(".botao-trailer"));
 
 const botaoTrailer = document.querySelector(".botao-trailer");
 
+// 1.3 - dar um jeito de pegar o elemento da modal no JS.
+
+const modal = document.querySelector(".modal");
+
 // 1.2 - dar um jeito de identificar quando o usuário clicar no botão.
 
 botaoTrailer.addEventListener("click", () => {
-    console.log("clicou no botão VEJA O TRAILER")
+    // 1.4 - abrir a modal na tela.
+    modal.classList.add("aberto");
 } );
 
-// 1.3 - dar um jeito de pegar o elemento da modal no JS.
+// 2.1 - dar um jeito de pegar o elemento de fechar modal usando o js.
+
 
 
