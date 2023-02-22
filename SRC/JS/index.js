@@ -11,5 +11,9 @@ Objetivos:
     2.1 - dar um jeito de pegar o elemento de fechar modal usando o js.
     2.2 - dar um jeito de identificar quando o usuario clicar no x.
     2.3 - fechar a modal.
-    
+
 */
+
+console.log(document);
+
+document.querySelector();
