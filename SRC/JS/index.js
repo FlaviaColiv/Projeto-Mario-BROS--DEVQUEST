@@ -16,4 +16,4 @@ Objetivos:
 
 console.log(document);
 
-document.querySelector();
+console.log(document.querySelector(".botao-trailer"));
