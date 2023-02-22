@@ -14,34 +14,26 @@ Objetivos:
 
 */
 
-// 1.1 - dar um jeito de pegar o elemento que representa o botão na tela usando JS.
-console.log(document);
-
-console.log(document.querySelector(".botao-trailer"));
-
 const botaoTrailer = document.querySelector(".botao-trailer");
-
-// 1.3 - dar um jeito de pegar o elemento da modal no JS.
-
 const modal = document.querySelector(".modal");
-
-// 1.2 - dar um jeito de identificar quando o usuário clicar no botão.
-
-botaoTrailer.addEventListener("click", () => {
-    // 1.4 - abrir a modal na tela.
-    modal.classList.add("aberto");
-} );
-
-// 2.1 - dar um jeito de pegar o elemento de fechar modal usando o js.
-
+const video = document.getElementById("video");
+const linkDoVideo = video.src;
 const botaoFecharModal = document.querySelector(".fechar-modal");
 
-// 2.2 - dar um jeito de identificar quando o usuario clicar no x.
+// console.log(document);
+
+// console.log(document.querySelector(".botao-trailer"));
+
+function alternarModal () {
+    modal.classList.toggle("aberto");
+}
+
+botaoTrailer.addEventListener("click", () => {
+    alternarModal();
+    video.setAttribute("src", linkDoVideo);
+} );
 
 botaoFecharModal.addEventListener("click", () => {
-    // 2.3 - fechar a modal.
-    modal.classList.remove("aberto");
-})
-
-
-
+    alternarModal();
+    video.setAttribute("src", "");
+} );
