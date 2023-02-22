@@ -14,6 +14,19 @@ Objetivos:
 
 */
 
+// 1.1 - dar um jeito de pegar o elemento que representa o botão na tela usando JS.
 console.log(document);
 
 console.log(document.querySelector(".botao-trailer"));
+
+const botaoTrailer = document.querySelector(".botao-trailer");
+
+// 1.2 - dar um jeito de identificar quando o usuário clicar no botão.
+
+botaoTrailer.addEventListener("click", () => {
+    console.log("clicou no botão VEJA O TRAILER")
+} );
+
+// 1.3 - dar um jeito de pegar o elemento da modal no JS.
+
+
